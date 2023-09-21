@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="all">     
+            <div class="kapsayici">
+            <h1 style="color:red; padding: 12px;">punica</h1>
+            <div class="barr">
+            <h2>Dear Samet,</h2>
+            <p>Please find below your weekly work attendace for week {{WeekOfYear}} of the year {{year}}.</p>
+            <p>Starting from {{durationStart}} to {{durationEnd}}.</p>
+            <p>If you find any anomaly in the calculated record, create a report from <a style="color: red; text-decoration: underline;">Punica</a> or feel free to report it to your manager.</p>
+            <p> {{#each records}} {{/each}} </p>
+
+                
+            <div class="container">
+                <div class="bar">
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>First Entry</th>
+                            <th>Last Exit</th>
+                            <th>Spent Outside</th>
+                        </tr>
+                        <br/>
+                        <tr>
+                            <td><b>1</b></td>
+                            <td>{{entryTime}}</td>
+                            <td>{{exitTime}}</td>
+                            <td>{{timeSpentOut}}</td>
+                            
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td ><b>2</b></td>
+                            <td>{{entryTime}}</td>
+                            <td>{{exitTime}}</td>
+                            <td>{{timeSpentOut}}</td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td><b>3</b></td>
+                            <td>{{entryTime}}</td>
+                            <td>{{exitTime}}</td>
+                            <td>{{timeSpentOut}}</td>
+                        </tr>
+                        
+                    </table>
+
+                    
+
+                 </div>
+            </div>  
+
+            <div class="note">
+                <span><b>Note:</b>
+                <span style="color:rgb(128, 126, 123);"><p>Indicates Administrative holiday or employee timeoff.</p></span>
+                <span style="color:rgb(128, 126, 123);">Absent Indicates absence from work.</span>
+
+
+        </div>
+
+            
+        </div>
+    </div>  
+
+    <div class="logoc">
+    <div class="logo">
+        <span style="color: rgb(255, 0, 0); font-weight: bold;">Logo</span>
+        <div class="footer">
+        <span style="color: rgb(102, 102, 102);"> 2023 Punica, All Rights Reserved</span>
+        <span style="color: rgb(102, 102, 102);"><p>Yakın Doğu Bulvarıi 99138 Lefkoşa / KKTC</p></span>
+    </div>
+        </div> 
+    </div>
+            
+
+     
+
+
+</body>
+</html>
